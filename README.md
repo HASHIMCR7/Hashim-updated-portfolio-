@@ -1,1 +1,372 @@
-# Hashim-updated-portfolio-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mohammed Hashim R — IT Support Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+
+<style>
+:root{
+  --bg:#0a0d0f;
+  --surface:#111518;
+  --card:#161b1f;
+  --border:#1e2a32;
+  --accent:#00d4ff;
+  --accent2:#00ff9d;
+  --text:#e8f0f5;
+  --muted:#6b8090;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'DM Mono', monospace;
+}
+
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:rgba(10,13,15,0.9);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(0,212,255,0.08);
+  z-index:1000;
+}
+
+.nav-logo{
+  font-family:'Syne', sans-serif;
+  font-size:1.2rem;
+  font-weight:800;
+  color:var(--accent);
+}
+
+.nav-links{
+  display:flex;
+  gap:32px;
+  list-style:none;
+}
+
+.nav-links a{
+  color:var(--muted);
+  text-decoration:none;
+  font-size:.8rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
+
+.hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  padding:120px 60px 80px;
+}
+
+.hero-name{
+  font-family:'Syne', sans-serif;
+  font-size:5rem;
+  line-height:.9;
+  margin-bottom:16px;
+}
+
+.highlight{
+  color:transparent;
+  -webkit-text-stroke:1px var(--accent);
+}
+
+.hero-role{
+  font-family:'Instrument Serif', serif;
+  font-style:italic;
+  font-size:1.6rem;
+  color:var(--muted);
+  margin-bottom:24px;
+}
+
+.hero-desc{
+  color:var(--muted);
+  line-height:1.8;
+  max-width:500px;
+  margin-bottom:32px;
+}
+
+.hero-cta{
+  display:flex;
+  gap:16px;
+}
+
+.btn-primary{
+  background:var(--accent);
+  color:#000;
+  padding:14px 28px;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:.75rem;
+  letter-spacing:.1em;
+}
+
+.btn-outline{
+  border:1px solid var(--border);
+  color:var(--text);
+  padding:14px 28px;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:.75rem;
+}
+
+.terminal{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.terminal-bar{
+  background:var(--surface);
+  padding:12px 16px;
+  border-bottom:1px solid var(--border);
+}
+
+.terminal-body{
+  padding:24px;
+  line-height:2;
+  font-size:.8rem;
+}
+
+section{
+  padding:100px 60px;
+}
+
+.section-title{
+  font-family:'Syne', sans-serif;
+  font-size:3rem;
+  margin-bottom:50px;
+}
+
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.skill-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  padding:28px;
+}
+
+.skill-title{
+  font-family:'Syne', sans-serif;
+  margin-bottom:16px;
+}
+
+.tag{
+  display:inline-block;
+  padding:6px 10px;
+  border:1px solid var(--border);
+  margin:4px;
+  font-size:.7rem;
+}
+
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:24px;
+}
+
+.project-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  padding:32px;
+}
+
+.project-title{
+  font-family:'Syne', sans-serif;
+  font-size:1.2rem;
+  margin-bottom:14px;
+}
+
+.project-desc{
+  color:var(--muted);
+  line-height:1.8;
+}
+
+footer{
+  border-top:1px solid var(--border);
+  padding:40px 60px;
+  text-align:center;
+  color:var(--muted);
+}
+
+@media(max-width:900px){
+
+.hero{
+  grid-template-columns:1fr;
+}
+
+.hero-name{
+  font-size:3rem;
+}
+
+nav{
+  padding:20px;
+}
+
+section{
+  padding:80px 20px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="nav-logo">MHR</div>
+
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+
+  <div>
+    <h1 class="hero-name">
+      Mohammed <br>
+      <span class="highlight">Hashim</span> R
+    </h1>
+
+    <p class="hero-role">
+      IT Support & Cloud Enthusiast
+    </p>
+
+    <p class="hero-desc">
+      Motivated IT professional with hands-on experience in Linux administration, networking, cloud fundamentals, and technical support.
+    </p>
+
+    <div class="hero-cta">
+      <a href="mailto:mohammedhash@gmail.com" class="btn-primary">
+        Contact Me
+      </a>
+
+      <a href="#" class="btn-outline">
+        View Portfolio
+      </a>
+    </div>
+  </div>
+
+  <div class="terminal">
+
+    <div class="terminal-bar">
+      hashim@portfolio
+    </div>
+
+    <div class="terminal-body">
+      <p>> whoami</p>
+      <p>Mohammed Hashim R</p>
+
+      <p>> role</p>
+      <p>IT Support Analyst</p>
+
+      <p>> skills</p>
+      <p>Linux • Networking • AWS • Support</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="skills">
+
+  <h2 class="section-title">
+    Skills
+  </h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <h3 class="skill-title">Operating Systems</h3>
+
+      <span class="tag">Linux</span>
+      <span class="tag">Ubuntu</span>
+      <span class="tag">Windows</span>
+    </div>
+
+    <div class="skill-card">
+      <h3 class="skill-title">Networking</h3>
+
+      <span class="tag">TCP/IP</span>
+      <span class="tag">DNS</span>
+      <span class="tag">DHCP</span>
+    </div>
+
+    <div class="skill-card">
+      <h3 class="skill-title">Cloud</h3>
+
+      <span class="tag">AWS</span>
+      <span class="tag">EC2</span>
+      <span class="tag">IAM</span>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="projects">
+
+  <h2 class="section-title">
+    Projects
+  </h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+
+      <h3 class="project-title">
+        Linux Administration Lab
+      </h3>
+
+      <p class="project-desc">
+        Hands-on Linux administration and troubleshooting using Ubuntu and CLI tools.
+      </p>
+
+    </div>
+
+    <div class="project-card">
+
+      <h3 class="project-title">
+        Networking Practice Project
+      </h3>
+
+      <p class="project-desc">
+        Practiced DNS troubleshooting, subnetting, ping, traceroute and TCP/IP concepts.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  Mohammed Hashim R • IT Support Portfolio
+</footer>
+
+</body>
+</html>
